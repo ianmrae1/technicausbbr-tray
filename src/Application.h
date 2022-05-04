@@ -10,7 +10,12 @@
 
 #include <list>
 #include <gtk/gtk.h>
+
+#if defined(LIB_AYATANA)
+#include <libayatana-appindicator/app-indicator.h>
+#else
 #include <libappindicator/app-indicator.h>
+#endif
 
 #include "HotplugHandler.h"
 

@@ -12,9 +12,6 @@
 
 #include <iostream>
 
-#include <gtk/gtk.h>
-#include <libappindicator/app-indicator.h>
-
 using namespace std;
 
 namespace te {

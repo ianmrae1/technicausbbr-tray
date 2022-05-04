@@ -18,7 +18,15 @@ pkg_check_modules(GTK3 REQUIRED gtk+-3.0)
 find_package(Threads REQUIRED)
 
 find_package(libudev REQUIRED)
-pkg_check_modules(LIBAPPINDICATOR REQUIRED appindicator3-0.1)
+
+pkg_check_modules(LIBAPPINDICATOR QUIET appindicator3-0.1)
+if(NOT LIBAPPINDICATOR_INCLUDE_DIRS)
+    pkg_check_modules(LIBAPPINDICATOR QUIET ayatana-appindicator3-0.1)
+    add_definitions(-DLIB_AYATANA)
+endif()
+if(NOT LIBAPPINDICATOR_INCLUDE_DIRS)
+    message(FATAL_ERROR "appindicator library not found. Install libappindicator3-dev OR libayatana-appindicator3-dev")
+endif()
 
 include_directories(${GTK3_INCLUDE_DIRS})
 link_directories(${GTK3_LIBRARY_DIRS})

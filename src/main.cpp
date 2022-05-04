@@ -10,9 +10,6 @@
 #include <vector>
 #include <list>
 
-#include <gtk/gtk.h>
-#include <libappindicator/app-indicator.h>
-
 #include "Application.h"
 #include "HotplugHandler.h"
 
