@@ -1,0 +1,27 @@
+This package provides a tray application to manage Technica Engineering USB BroadR-Reach converters.
+
+Requirements/Dependencies:
+	- cmake (>= 3.1)
+	- gtk+-3.0
+	- libudev
+	- libappindicator
+
+If you are using Ubuntu then execute following command to install dependencies,
+	sudo apt-get install cmake libgtk-3-dev libudev-dev libappindicator3-dev
+
+
+To install, run:
+	./install.sh
+Enter your superuser (sudo) password when asked
+After successful installation a tray icon will appear(top right) with Technica application that will allow you to configure the device.
+If the application doesn't appear automatically in the tray area then try following options,
+1. Restart the machine
+2. After restart if application is still not visible then check Gnome-extensions and ensure Ubuntu Appindicators option is enabled.
+
+Alternatively the application can be launched in the tray manually by executing following command
+technicabr-tray
+
+
+To uninstall, run
+	./uninstall.sh
+Enter your superuser (sudo) password when asked

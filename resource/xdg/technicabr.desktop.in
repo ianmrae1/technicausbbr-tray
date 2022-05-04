@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=@PROJECT_VERSION@
+Type=Application
+Name=TechnicaBR Tray
+Comment=Management applet for the Technica Engineering BroadR-Reach USB converters
+TryExec=@CMAKE_INSTALL_PREFIX@/bin/@PROJECT_NAME@
+Exec=@CMAKE_INSTALL_PREFIX@/bin/@PROJECT_NAME@
+Icon=technica-engineering
+Categories=GTK;GNOME;Settings;HardwareSettings;
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,16 @@
+/*
+ * configure.h
+ *
+ *  Created on: Oct 9, 2017
+ *      Author: ecos
+ */
+
+#ifndef SRC_BUILD_CONFIG_H_IN_
+#define SRC_BUILD_CONFIG_H_IN_
+
+#define PROJECT_NAME "@PROJECT_NAME@"
+#define PROJECT_VERSION "@PROJECT_VERSION@"
+#define INSTALL_PREFIX "@CMAKE_INSTALL_PREFIX@"
+#define XDG_ICONS_PATH "@XDG_ICONS_PATH@"
+
+#endif /* SRC_BUILD_CONFIG_H_IN_ */
